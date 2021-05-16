@@ -90,19 +90,6 @@ color:#fff
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media screen and (max-width: 920px) {
-  .card {
-    width: 90%;
-    margin: 15px auto;
-  }
-  .card:not(:last-child) {
-    margin-right: auto;
-  }
-  .cards > .flex {
-    display: block;
-  }
-}
-
 .card img{
   width: 100px;
   height: 110px;
@@ -121,7 +108,7 @@ color:#fff
 }
 
 button{
-  margin:50px 38%;
+  margin:50px 25%;
   height:60px;
   width:300px;
   border-radius: 5px;
@@ -157,25 +144,6 @@ button{
   font-weight: 200;
 }
 
-@media screen and (max-width: 700px) {
-  .column {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 920px) {
-  .card {
-    width: 90%;
-    margin: 15px auto;
-  }
-  .card:not(:last-child) {
-    margin-right: auto;
-  }
-  .cards > .flex {
-    display: block;
-  }
-}
-
 .subsection>p{
   margin:20px 10%;
   text-align: center;
@@ -189,12 +157,136 @@ button{
   width: 10px;
 }
 
-.verticalfooter{
-flex-direction: column;
+/*Footer*/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #6a7b8b;
+  padding: 2%;
+  margin-top: 3%;
+}
+footer > img {
+  width:40px;
+  height:60px;
+}
+footer div img {
+  width: 2%;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+footer p {
+  color: white;
 }
 
-#id{
-  width:20px;
-  height:20px;
+#footer {
+  padding-top: 1%;
 }
-/* TYPOGRAPHY */
+
+/* ABOUT PAGE */
+
+section {
+  text-align: center;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+.first-col {
+  flex: 60%;
+  padding: 5%;
+  text-align: left;
+}
+.first-col p,
+h1 {
+  margin-bottom: 5%;
+}
+.second-col {
+  flex: 40%;
+  padding: 2%;
+}
+.second-col img {
+  width: 90%;
+  height: 90%;
+}
+.heading {
+  font-size: 35px;
+  color: #5c5b5b;
+}
+.subhead text {
+  font-size: 22px;
+  color: #5c5b5b;
+}
+
+
+/*CONTACT PAGE*/
+
+.form {
+  text-align: left;
+  margin-left:23%;
+}
+#contact img:last-child {
+  margin: 5% 0 5% 5%;
+  padding: 0;
+  width: 60%;
+  align-self: flex-start;
+}
+
+#contact:not(:last-child) {
+  font-size: 22px;
+  color: #5c5b5b;
+}
+
+
+@media screen and (max-width: 912px) {
+  
+  
+  footer > img {
+    width: 10%;
+    margin-top: 0;
+  }
+  footer div img {
+    width: 5%;
+    margin-top: 3%;
+  }
+
+  .cards.flex.space-evenly {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card{
+    margin:5% 50%;
+  }
+
+  .main {
+    flex-direction: column-reverse;
+  }
+  .second-col img {
+    width: 80%;
+    height: 80%;
+    margin-right:60%;
+  }
+  .heading {
+    font-size: 20pt;
+  }
+  .subhead {
+    font-size: 12pt;
+  }
+
+  section img:last-child {
+    margin: 5% 0 5% 15%;
+    padding: 0;
+    width: 70%;
+  }
+}
+
+
+
+
